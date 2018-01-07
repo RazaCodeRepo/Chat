@@ -173,6 +173,7 @@ public class MainActivity extends AppCompatActivity {
                 if (user != null){
                     Toast.makeText(MainActivity.this, "You are signed in. Welcome to FriendlyChat!", Toast.LENGTH_SHORT).show();
                 } else {
+
                     startActivityForResult(
                             AuthUI.getInstance()
                                     .createSignInIntentBuilder()
